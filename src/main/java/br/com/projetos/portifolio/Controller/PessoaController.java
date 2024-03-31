@@ -16,7 +16,7 @@ public class PessoaController {
     @PostMapping
     public void cadastrarPessoa(@RequestBody Pessoa pessoa) {
 
-        pessoaService.cadastrar(pessoa);
+        pessoaService.save(pessoa);
     }
 
 

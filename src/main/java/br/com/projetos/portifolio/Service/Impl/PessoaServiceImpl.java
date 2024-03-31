@@ -1,4 +1,4 @@
-package br.com.projetos.portifolio.Controller.Impl;
+package br.com.projetos.portifolio.Service.Impl;
 
 import br.com.projetos.portifolio.Repository.PessoaRepository;
 import br.com.projetos.portifolio.Service.PessoaService;
@@ -7,12 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PessoaControllerImpl implements PessoaService {
+public class PessoaServiceImpl implements PessoaService {
 
     @Autowired
     PessoaRepository pessoaRepository;
     @Override
-    public void cadastrar(Pessoa pessoa) {
+    public void save(Pessoa pessoa) {
         pessoaRepository.save(pessoa);
     }
 }
