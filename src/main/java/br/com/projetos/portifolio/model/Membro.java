@@ -18,7 +18,8 @@ public class Membro implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @NotNull
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idProjeto;
 
     @NotNull
